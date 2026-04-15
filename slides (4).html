@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair+Display', serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            overflow: hidden;
+            position: relative;
+            background: white;
+            margin: 20px auto;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        .bg-gold { background-color: #C5A059; }
+        .text-gold { color: #C5A059; }
+        .border-gold { border-color: #C5A059; }
+        .overlay {
+            background: linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 100%);
+        }
+    </style>
+</head>
+<body>
+    <!-- Slide 1: Title -->
+    <div class="slide-container" id="slide1">
+        <div class="absolute inset-0">
+            <img src="public/images/luxury_villa_exterior_3_1.jpeg" class="w-full h-full object-cover" alt="Luxury Villa">
+            <div class="absolute inset-0 overlay"></div>
+        </div>
+        <div class="relative z-10 flex flex-col justify-center h-full px-20 text-white">
+            <h1 class="text-6xl font-bold mb-4 leading-tight">Discover the Hidden “Soul” <br>of Your Home</h1>
+            <p class="text-3xl text-gold font-light mb-8 italic">And Turn It Into Real Value</p>
+            <div class="w-24 h-1 bg-gold mb-8"></div>
+            <p class="text-xl max-w-2xl leading-relaxed opacity-90">
+                Most homes lose 10%–20% of their value… not because of location, but because they feel wrong.
+            </p>
+        </div>
+    </div>
+
+    <!-- Slide 2: The Problem -->
+    <div class="slide-container" id="slide2">
+        <div class="flex h-full">
+            <div class="w-1/2 bg-stone-900 text-white p-20 flex flex-col justify-center">
+                <h2 class="text-4xl font-bold mb-8">The Problem No Realtor <br>Talks About</h2>
+                <div class="space-y-6 text-lg opacity-80">
+                    <p>You can have a great location.</p>
+                    <p>A clean house.</p>
+                    <p>A fair price.</p>
+                    <p class="text-gold font-bold text-2xl">…and STILL struggle to sell.</p>
+                </div>
+            </div>
+            <div class="w-1/2 bg-stone-100 p-20 flex flex-col justify-center">
+                <h3 class="text-3xl font-bold mb-6 text-stone-800">Why?</h3>
+                <p class="text-xl leading-relaxed text-stone-600 mb-8">
+                    Because your home is sending <span class="text-stone-900 font-bold">mixed signals</span>.
+                </p>
+                <ul class="space-y-4 text-lg text-stone-500">
+                    <li class="flex items-center"><span class="w-2 h-2 bg-gold rounded-full mr-3"></span> Cold instead of cozy</li>
+                    <li class="flex items-center"><span class="w-2 h-2 bg-gold rounded-full mr-3"></span> Cluttered instead of calm</li>
+                    <li class="flex items-center"><span class="w-2 h-2 bg-gold rounded-full mr-3"></span> Generic instead of memorable</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 3: Square Footage vs Feeling -->
+    <div class="slide-container" id="slide3">
+        <div class="flex flex-col items-center justify-center h-full text-center px-40 bg-stone-50">
+            <h2 class="text-5xl font-bold mb-12 text-stone-900">Buyers Don’t Just Purchase <br>Square Footage</h2>
+            <div class="text-7xl font-bold text-gold mb-12 italic">They buy a feeling.</div>
+            <p class="text-2xl text-stone-600 leading-relaxed">
+                And if your home doesn’t trigger the right one… <br>
+                <span class="text-stone-900 font-bold">you leave money on the table.</span>
+            </p>
+        </div>
+    </div>
+
+    <!-- Slide 4: Introducing Architectural Soul -->
+    <div class="slide-container" id="slide4">
+        <div class="flex h-full">
+            <div class="w-2/5 relative">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover" alt="Architectural Detail">
+            </div>
+            <div class="w-3/5 p-20 flex flex-col justify-center bg-white">
+                <h2 class="text-4xl font-bold mb-8 text-stone-900">Introducing: The <br>“Architectural Soul” Blueprint</h2>
+                <p class="text-xl text-stone-600 mb-8 leading-relaxed">
+                    After 30+ years and thousands of homes, I discovered one truth:
+                </p>
+                <div class="bg-stone-50 p-8 border-l-4 border-gold italic text-2xl text-stone-800 mb-8">
+                    “Every high-value home has a clear identity. I call it your home’s Architectural Soul.”
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 5: Alignment Benefits -->
+    <div class="slide-container" id="slide5">
+        <div class="grid grid-cols-3 h-full">
+            <div class="flex flex-col justify-center p-12 bg-stone-900 text-white border-r border-stone-800">
+                <div class="text-gold text-5xl mb-6">01</div>
+                <h3 class="text-2xl font-bold mb-4">Instant Connection</h3>
+                <p class="opacity-70">Buyers feel it the moment they walk through the door.</p>
+            </div>
+            <div class="flex flex-col justify-center p-12 bg-stone-900 text-white border-r border-stone-800">
+                <div class="text-gold text-5xl mb-6">02</div>
+                <h3 class="text-2xl font-bold mb-4">Market Distinction</h3>
+                <p class="opacity-70">Your property stands out in a sea of generic listings.</p>
+            </div>
+            <div class="flex flex-col justify-center p-12 bg-stone-900 text-white">
+                <div class="text-gold text-5xl mb-6">03</div>
+                <h3 class="text-2xl font-bold mb-4">Natural Value</h3>
+                <p class="opacity-70">Your price increases naturally as perceived value rises.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 6: Soul Type Overview -->
+    <div class="slide-container" id="slide6">
+        <div class="p-20 flex flex-col justify-center h-full bg-stone-50">
+            <h2 class="text-4xl font-bold mb-8 text-stone-900">Find Your Home’s Soul Type</h2>
+            <p class="text-xl text-stone-600 mb-12 max-w-3xl">
+                Every home falls into one dominant “Soul Type”. Most homeowners unknowingly mix styles, which creates <span class="text-stone-900 font-bold">visual confusion</span> and lowers perceived value.
+            </p>
+            <div class="grid grid-cols-4 gap-8">
+                <div class="text-center p-6 bg-white shadow-sm border-t-4 border-stone-800">
+                    <h4 class="font-bold text-stone-900">The Historian</h4>
+                </div>
+                <div class="text-center p-6 bg-white shadow-sm border-t-4 border-stone-400">
+                    <h4 class="font-bold text-stone-900">The Earth Soul</h4>
+                </div>
+                <div class="text-center p-6 bg-white shadow-sm border-t-4 border-stone-200">
+                    <h4 class="font-bold text-stone-900">The Essentialist</h4>
+                </div>
+                <div class="text-center p-6 bg-white shadow-sm border-t-4 border-gold">
+                    <h4 class="font-bold text-stone-900">The Visionary</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 7: The Historian -->
+    <div class="slide-container" id="slide7">
+        <div class="flex h-full">
+            <div class="w-1/2">
+                <img src="public/images/historian_home_interior_1.jpeg" class="w-full h-full object-cover" alt="Historian Style">
+            </div>
+            <div class="w-1/2 p-20 flex flex-col justify-center bg-stone-900 text-white">
+                <h3 class="text-gold text-xl uppercase tracking-widest mb-4">Soul Type 01</h3>
+                <h2 class="text-5xl font-bold mb-8">The Historian</h2>
+                <p class="text-2xl italic mb-8 opacity-90">Rich, deep, and full of character.</p>
+                <div class="w-16 h-1 bg-gold mb-8"></div>
+                <p class="text-xl leading-relaxed opacity-70">
+                    Creates a feeling of <span class="text-white font-bold">security and luxury</span>. Perfect for homes with architectural heritage and timeless details.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 8: The Earth Soul -->
+    <div class="slide-container" id="slide8">
+        <div class="flex h-full">
+            <div class="w-1/2 p-20 flex flex-col justify-center bg-stone-100">
+                <h3 class="text-stone-400 text-xl uppercase tracking-widest mb-4">Soul Type 02</h3>
+                <h2 class="text-5xl font-bold mb-8 text-stone-900">The Earth Soul</h2>
+                <p class="text-2xl italic mb-8 text-stone-600">Warm, natural, and grounded.</p>
+                <div class="w-16 h-1 bg-stone-800 mb-8"></div>
+                <p class="text-xl leading-relaxed text-stone-500">
+                    Creates a feeling of <span class="text-stone-900 font-bold">comfort and calm</span>. Focuses on organic materials, soft textures, and a connection to nature.
+                </p>
+            </div>
+            <div class="w-1/2">
+                <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover" alt="Earth Soul Style">
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 9: The Essentialist -->
+    <div class="slide-container" id="slide9">
+        <div class="flex h-full">
+            <div class="w-1/2">
+                <img src="public/images/essentialist_interior_1.jpeg" class="w-full h-full object-cover" alt="Essentialist Style">
+            </div>
+            <div class="w-1/2 p-20 flex flex-col justify-center bg-white">
+                <h3 class="text-stone-400 text-xl uppercase tracking-widest mb-4">Soul Type 03</h3>
+                <h2 class="text-5xl font-bold mb-8 text-stone-900">The Essentialist</h2>
+                <p class="text-2xl italic mb-8 text-stone-600">Clean, bright, and minimal.</p>
+                <div class="w-16 h-1 bg-stone-200 mb-8"></div>
+                <p class="text-xl leading-relaxed text-stone-500">
+                    Creates a feeling of <span class="text-stone-900 font-bold">clarity and space</span>. Emphasizes light, functional design, and visual silence.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 10: The Visionary -->
+    <div class="slide-container" id="slide10">
+        <div class="flex h-full">
+            <div class="w-1/2 p-20 flex flex-col justify-center bg-stone-800 text-white">
+                <h3 class="text-gold text-xl uppercase tracking-widest mb-4">Soul Type 04</h3>
+                <h2 class="text-5xl font-bold mb-8">The Visionary</h2>
+                <p class="text-2xl italic mb-8 opacity-90">Bold, modern, and striking.</p>
+                <div class="w-16 h-1 bg-gold mb-8"></div>
+                <p class="text-xl leading-relaxed opacity-70">
+                    Creates a feeling of <span class="text-white font-bold">excitement and uniqueness</span>. For homes that push boundaries with innovative design and bold statements.
+                </p>
+            </div>
+            <div class="w-1/2">
+                <img src="https://images.unsplash.com/photo-1600607687940-47a04b629733?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover" alt="Visionary Style">
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 11: Results -->
+    <div class="slide-container" id="slide11">
+        <div class="p-20 flex flex-col justify-center h-full bg-stone-900 text-white">
+            <h2 class="text-4xl font-bold mb-12">What Happens When You Get It Right</h2>
+            <div class="grid grid-cols-2 gap-12">
+                <div class="flex items-start">
+                    <div class="text-gold text-3xl mr-6">✔</div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Faster Sales</h4>
+                        <p class="opacity-60">Reduced time on market through immediate appeal.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="text-gold text-3xl mr-6">✔</div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Emotional Connection</h4>
+                        <p class="opacity-60">Buyers fall in love with the "feeling" of the home.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="text-gold text-3xl mr-6">✔</div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Stronger Offers</h4>
+                        <p class="opacity-60">Perceived value leads to higher price points.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="text-gold text-3xl mr-6">✔</div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">High-End Feel</h4>
+                        <p class="opacity-60">Luxury perception, even on a modest budget.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 12: Principles 1 -->
+    <div class="slide-container" id="slide12">
+        <div class="flex h-full">
+            <div class="w-1/2 p-20 flex flex-col justify-center bg-white">
+                <h2 class="text-4xl font-bold mb-12 text-stone-900">Real Transformation <br>Principles</h2>
+                <div class="space-y-12">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gold mb-4">The 70/30 Rule</h3>
+                        <p class="text-lg text-stone-600">One dominant style (70%), one supporting (30%). This creates harmony without being generic.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gold mb-4">The Threshold Effect</h3>
+                        <p class="text-lg text-stone-600">The first impression at the entrance sets the emotional tone and increases perceived value instantly.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/2 bg-stone-50 flex items-center justify-center p-20">
+                <div class="text-center">
+                    <p class="text-stone-400 uppercase tracking-widest mb-4">Design Psychology</p>
+                    <p class="text-3xl font-serif italic text-stone-800">“These aren’t trends. They’re psychological triggers.”</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 13: Principles 2 -->
+    <div class="slide-container" id="slide13">
+        <div class="flex h-full">
+            <div class="w-1/2 bg-stone-900 flex items-center justify-center p-20">
+                <div class="text-center">
+                    <p class="text-gold uppercase tracking-widest mb-4">Value Creation</p>
+                    <p class="text-3xl font-serif italic text-white">“Less clutter = more perceived luxury.”</p>
+                </div>
+            </div>
+            <div class="w-1/2 p-20 flex flex-col justify-center bg-white">
+                <div class="space-y-12">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gold mb-4">The Visual Silence Rule</h3>
+                        <p class="text-lg text-stone-600">Strategic removal of visual noise allows the home's architectural soul to speak clearly.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gold mb-4">The Lighting Strategy</h3>
+                        <p class="text-lg text-stone-600">Warm, layered lighting creates emotional comfort and highlights high-value features.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 14: Turn Design Into Equity -->
+    <div class="slide-container" id="slide14">
+        <div class="p-20 flex flex-col justify-center h-full bg-stone-50">
+            <h2 class="text-4xl font-bold mb-8 text-stone-900">Turn Design Into Equity</h2>
+            <p class="text-xl text-stone-600 mb-12">You don’t need a full renovation. Small changes can create massive value perception shifts.</p>
+            <div class="grid grid-cols-3 gap-8">
+                <div class="bg-white p-8 shadow-sm">
+                    <h4 class="font-bold mb-4 text-stone-900">Better Lighting</h4>
+                    <p class="text-stone-500">Creates a higher-end, more inviting atmosphere.</p>
+                </div>
+                <div class="bg-white p-8 shadow-sm">
+                    <h4 class="font-bold mb-4 text-stone-900">Correct Layout</h4>
+                    <p class="text-stone-500">Gives a more spacious and functional impression.</p>
+                </div>
+                <div class="bg-white p-8 shadow-sm">
+                    <h4 class="font-bold mb-4 text-stone-900">Consistent Materials</h4>
+                    <p class="text-stone-500">Provides a cohesive, "designer" look throughout.</p>
+                </div>
+            </div>
+            <p class="mt-12 text-2xl font-bold text-stone-800 italic">👉 This is how you turn style into profit.</p>
+        </div>
+    </div>
+
+    <!-- Slide 15: About Pete Bauch -->
+    <div class="slide-container" id="slide15">
+        <div class="flex h-full">
+            <div class="w-2/5">
+                <img src="public/images/pete_bauch_realtor_2_1.jpeg" class="w-full h-full object-cover" alt="Pete Bauch">
+            </div>
+            <div class="w-3/5 p-20 flex flex-col justify-center bg-white">
+                <h2 class="text-4xl font-bold mb-4 text-stone-900">Pete Bauch</h2>
+                <p class="text-gold text-xl mb-8">Realtor | 30+ Years Experience</p>
+                <p class="text-lg text-stone-600 mb-8 leading-relaxed">
+                    I don’t just list homes. I help homeowners unlock hidden value through <span class="text-stone-900 font-bold">design, psychology, and strategy</span>.
+                </p>
+                <p class="text-lg text-stone-600 leading-relaxed">
+                    Because the difference between an average sale… and a record-breaking one… is <span class="text-stone-900 font-bold italic">how a home feels</span>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 16: Soul Audit -->
+    <div class="slide-container" id="slide16">
+        <div class="p-20 flex flex-col items-center justify-center h-full text-center bg-stone-900 text-white">
+            <h2 class="text-5xl font-bold mb-12">Get Your Personalized <br>“Soul Audit”</h2>
+            <div class="grid grid-cols-2 gap-8 max-w-4xl text-left mb-12">
+                <div class="flex items-center space-x-4">
+                    <span class="text-gold text-2xl">✔</span>
+                    <span class="opacity-80">Identify value-lowering factors</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <span class="text-gold text-2xl">✔</span>
+                    <span class="opacity-80">Discover your true “Soul Type”</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <span class="text-gold text-2xl">✔</span>
+                    <span class="opacity-80">Step-by-step change roadmap</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <span class="text-gold text-2xl">✔</span>
+                    <span class="opacity-80">Immediate buyer appeal strategy</span>
+                </div>
+            </div>
+            <div class="bg-gold text-white px-12 py-4 text-2xl font-bold cursor-pointer hover:bg-opacity-90 transition">
+                Book Your Free Consultation
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 17: Final CTA -->
+    <div class="slide-container" id="slide17">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1280&q=80" class="w-full h-full object-cover opacity-20" alt="Luxury Home">
+        </div>
+        <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-20">
+            <h2 class="text-5xl font-bold mb-8 text-stone-900">Your Next Step</h2>
+            <div class="flex space-x-12 mb-16">
+                <div class="w-64 p-8 bg-white shadow-lg border-t-4 border-stone-300">
+                    <h4 class="font-bold mb-4">Option 1</h4>
+                    <p class="text-stone-500 text-sm">Sell the traditional way and compete on price.</p>
+                </div>
+                <div class="w-64 p-8 bg-white shadow-lg border-t-4 border-gold">
+                    <h4 class="font-bold mb-4">Option 2</h4>
+                    <p class="text-stone-500 text-sm">Optimize your home’s “Soul” and make buyers compete for YOU.</p>
+                </div>
+            </div>
+            <h3 class="text-3xl font-bold text-stone-800 mb-8">Claim Your Free Home Value + Soul Analysis</h3>
+            <p class="text-xl text-stone-500 mb-12">No cost. No obligation. Just a smarter way to sell.</p>
+            <div class="text-gold font-bold text-2xl border-b-2 border-gold pb-2 cursor-pointer">
+                Click here to get your free analysis
+            </div>
+        </div>
+    </div>
+</body>
+</html>

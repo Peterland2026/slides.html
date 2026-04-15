@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Architectural Soul &amp; Curb Appeal Blueprint</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+    <style>
+        :root {
+            --primary: #1a1a1a;
+            --accent: #c5a059;
+            --bg: #f9f9f9;
+            --text: #333333;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #e5e5e5;
+            margin: 0;
+            padding: 0;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: var(--bg);
+            position: relative;
+            overflow: hidden;
+            margin: 20px auto;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary);
+        }
+        .accent-line {
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent);
+            margin: 20px 0;
+        }
+        .bg-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(26,26,26,0.9) 30%, rgba(26,26,26,0.2) 100%);
+            z-index: 1;
+        }
+        .content-layer {
+            position: relative;
+            z-index: 2;
+            padding: 60px 80px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .slide-number {
+            position: absolute;
+            bottom: 40px;
+            right: 40px;
+            font-size: 14px;
+            color: var(--accent);
+            font-weight: 600;
+        }
+        .footer-info {
+            position: absolute;
+            bottom: 40px;
+            left: 80px;
+            font-size: 12px;
+            color: #888;
+            letter-spacing: 1px;
+        }
+        .grid-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            height: 100%;
+            align-items: center;
+        }
+        .image-card {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 4px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+        .quote-box {
+            border-left: 4px solid var(--accent);
+            padding-left: 30px;
+            font-style: italic;
+            font-size: 24px;
+            color: #555;
+            margin: 40px 0;
+        }
+        .tag {
+            display: inline-block;
+            padding: 6px 12px;
+            background-color: var(--accent);
+            color: white;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Slide 1: Title -->
+    <div class="slide-container" id="slide1">
+        <img alt="Luxury Villa" class="bg-image" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&amp;fit=crop&amp;w=1280&amp;q=80"/>
+        <div class="overlay"></div>
+        <div class="content-layer text-white">
+            <div class="tag">Architectural Soul</div>
+            <h1 class="text-7xl font-bold mb-4 leading-tight">Unlock Your Home’s<br/>Hidden Power</h1>
+            <div class="accent-line"></div>
+            <p class="text-2xl font-light mb-8 text-gray-300">Design Your Space, Transform Your Life</p>
+            <div class="mt-12">
+                <p class="text-lg font-semibold text-white">Pete Bauch</p>
+                <p class="text-sm text-gray-400">Realtor | Architectural Consultant</p>
+            </div>
+        </div>
+        <div class="slide-number">01</div>
+    </div>
+
+    <!-- Slide 2: Introduction -->
+    <div class="slide-container" id="slide2">
+        <div class="content-layer">
+            <div class="grid-layout">
+                <div>
+                    <div class="tag">The Vision</div>
+                    <h2 class="text-5xl font-bold mb-6">Your Home,<br/>Your Story</h2>
+                    <div class="accent-line"></div>
+                    <p class="text-xl text-gray-600 leading-relaxed mb-6">
+                        Your home isn't just a place; it's a giant mood board for you. This isn't about expensive makeovers; it's about making your space reflect exactly who you are.
+                    </p>
+                    <p class="text-xl text-gray-600 leading-relaxed">
+                        Together we'll find your <strong>"Architectural Soul"</strong> and bring it to life, turning style into equity.
+                    </p>
+                </div>
+                <div>
+                    <img alt="Luxury Interior" class="image-card" src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                </div>
+            </div>
+        </div>
+        <div class="footer-info">PETE BAUCH | REAL ESTATE EXCELLENCE</div>
+        <div class="slide-number">02</div>
+    </div>
+
+    <!-- Slide 3: The Soul Blueprint -->
+    <div class="slide-container" id="slide3">
+        <div class="content-layer">
+            <div class="max-w-3xl">
+                <div class="tag">The Concept</div>
+                <h2 class="text-5xl font-bold mb-6">The Soul Blueprint</h2>
+                <div class="accent-line"></div>
+                <p class="text-2xl text-gray-700 mb-8 leading-relaxed">
+                    Most people decorate for their guests. You are going to decorate for <strong>YOUR nervous system.</strong>
+                </p>
+                <div class="grid grid-cols-2 gap-8 mt-8">
+                    <div class="bg-white p-8 shadow-sm border-t-4 border-[#c5a059]">
+                        <h3 class="text-xl font-bold mb-4">Mental Health Tool</h3>
+                        <p class="text-gray-600">Your surroundings match your internal "Soul Type," triggering dopamine production.</p>
+                    </div>
+                    <div class="bg-white p-8 shadow-sm border-t-4 border-[#c5a059]">
+                        <h3 class="text-xl font-bold mb-4">Intentional Design</h3>
+                        <p class="text-gray-600">Moving beyond trends to create a space that truly heals and empowers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">03</div>
+    </div>
+
+    <!-- Slide 4: Peripheral Rest Hack -->
+    <div class="slide-container" id="slide4">
+        <div class="content-layer">
+            <div class="grid-layout">
+                <img alt="Living Room" class="image-card" src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                <div>
+                    <div class="tag">Insider Secret</div>
+                    <h2 class="text-5xl font-bold mb-6">The "Peripheral<br/>Rest" Hack</h2>
+                    <div class="accent-line"></div>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Your brain processes the "edges" of your vision even when looking straight ahead. If your peripheral vision is cluttered, your brain never relaxes.
+                    </p>
+                    <div class="bg-gray-100 p-6 rounded">
+                        <p class="font-semibold text-primary">The Rule:</p>
+                        <p class="text-gray-600 italic">"Anything you can see without turning your head must be 'High Joy' or 'Low Noise'."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">04</div>
+    </div>
+
+    <!-- Slide 5: The Conflict -->
+    <div class="slide-container" id="slide5">
+        <div class="content-layer text-center items-center">
+            <div class="tag">Strategy</div>
+            <h2 class="text-5xl font-bold mb-6">Historian vs. Visionary</h2>
+            <div class="accent-line mx-auto"></div>
+            <p class="text-xl text-gray-600 max-w-2xl mb-12">
+                The biggest mistake homeowners make is "Style Blending" without a plan.
+            </p>
+            <div class="flex justify-center gap-12 w-full max-w-4xl">
+                <div class="flex-1 bg-white p-10 shadow-lg">
+                    <h3 class="text-3xl font-bold mb-4">70%</h3>
+                    <p class="text-accent font-bold uppercase tracking-widest mb-4">Dominant Soul</p>
+                    <p class="text-gray-500">The foundation of your home's narrative.</p>
+                </div>
+                <div class="flex-1 bg-white p-10 shadow-lg">
+                    <h3 class="text-3xl font-bold mb-4">30%</h3>
+                    <p class="text-accent font-bold uppercase tracking-widest mb-4">Sub-Soul</p>
+                    <p class="text-gray-500">The eclectic accents that add depth.</p>
+                </div>
+            </div>
+            <p class="mt-12 text-gray-400 italic">The secret to homes that look "eclectic" instead of "messy."</p>
+        </div>
+        <div class="slide-number">05</div>
+    </div>
+
+    <!-- Slide 6: Soul Type 1: The Historian -->
+    <div class="slide-container" id="slide6">
+        <div class="content-layer">
+            <div class="grid-layout">
+                <div>
+                    <div class="tag">Soul Type 01</div>
+                    <h2 class="text-5xl font-bold mb-6">The Historian</h2>
+                    <p class="text-accent font-semibold mb-4">Gothic Victorian &amp; Traditional Haveli</p>
+                    <div class="accent-line"></div>
+                    <ul class="space-y-4 text-lg text-gray-600">
+                        <li class="flex items-start"><span class="text-accent mr-3">✦</span> The art of depth, drama, and historical weight.</li>
+                        <li class="flex items-start"><span class="text-accent mr-3">✦</span> Craves Refuge—protected spaces and low lighting.</li>
+                        <li class="flex items-start"><span class="text-accent mr-3">✦</span> Reduces sensory input for "Deep Rest" states.</li>
+                    </ul>
+                </div>
+                <img alt="Historian Interior" class="image-card" src="https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+            </div>
+        </div>
+        <div class="slide-number">06</div>
+    </div>
+
+    <!-- Slide 7: Historian Secret -->
+    <div class="slide-container" id="slide7">
+        <div class="content-layer bg-[#1a1a1a] text-white">
+            <div class="grid-layout">
+                <img alt="Ceiling Design" class="image-card" src="https://images.unsplash.com/photo-1616486341351-7973a69605d1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                <div>
+                    <div class="tag">Historian Secret</div>
+                    <h2 class="text-5xl font-bold mb-6 text-white">The "Ceiling<br/>Sink" Formula</h2>
+                    <div class="accent-line"></div>
+                    <p class="text-xl text-gray-400 mb-8 leading-relaxed">
+                        Paint your ceiling the same color as your walls, but one shade darker.
+                    </p>
+                    <div class="quote-box text-gray-300 border-accent">
+                        "Instantly makes a $200,000 house look like a $2,000,000 estate."
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">07</div>
+    </div>
+
+    <!-- Slide 8: Soul Type 2: The Essentialist -->
+    <div class="slide-container" id="slide8">
+        <div class="content-layer">
+            <div class="grid-layout">
+                <div>
+                    <div class="tag">Soul Type 02</div>
+                    <h2 class="text-5xl font-bold mb-6">The Essentialist</h2>
+                    <p class="text-accent font-semibold mb-4">Scandinavian &amp; Neoclassical</p>
+                    <div class="accent-line"></div>
+                    <ul class="space-y-4 text-lg text-gray-600">
+                        <li class="flex items-start"><span class="text-accent mr-3">✦</span> Visual clutter equals mental clutter.</li>
+                        <li class="flex items-start"><span class="text-accent mr-3">✦</span> Powered by Circadian Rhythm—light and shadow.</li>
+                        <li class="flex items-start"><span class="text-accent mr-3">✦</span> Symmetry creates authority and "Total Control."</li>
+                    </ul>
+                </div>
+                <img alt="Essentialist Interior" class="image-card" src="public/images/luxury_living_room_1.png"/>
+            </div>
+        </div>
+        <div class="slide-number">08</div>
+    </div>
+
+    <!-- Slide 9: Essentialist Secret -->
+    <div class="slide-container" id="slide9">
+        <div class="content-layer">
+            <div class="grid-layout">
+                <img alt="Lighting" class="image-card" src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                <div>
+                    <div class="tag">Essentialist Secret</div>
+                    <h2 class="text-5xl font-bold mb-6">The "2700K"<br/>Standard</h2>
+                    <div class="accent-line"></div>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Use 2700K (Warm White) frosted bulbs to mimic the glow of a candle.
+                    </p>
+                    <ul class="space-y-4 text-gray-500">
+                        <li>• Erases harsh shadows that cause visual noise.</li>
+                        <li>• Triggers relaxation instead of office-light stress.</li>
+                        <li>• The color of light is more vital than the furniture.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">09</div>
+    </div>
+
+    <!-- Slide 10: Soul Type 3: The Earth Soul -->
+    <div class="slide-container" id="slide10">
+        <div class="content-layer">
+            <div class="grid-layout">
+                <div>
+                    <div class="tag">Soul Type 03</div>
+                    <h2 class="text-5xl font-bold mb-6">The Earth Soul</h2>
+                    <p class="text-accent font-semibold mb-4">Southwestern &amp; Farmhouse</p>
+                    <div class="accent-line"></div>
+                    <ul class="space-y-4 text-lg text-gray-600">
+                        <li class="flex items-start"><span class="text-accent mr-3">✦</span> Driven by Tactile Feedback—the need to touch.</li>
+                        <li class="flex items-start"><span class="text-accent mr-3">✦</span> Materials that "patina" and age beautifully.</li>
+                        <li class="flex items-start"><span class="text-accent mr-3">✦</span> Raw, honest materials that lower blood pressure.</li>
+                    </ul>
+                </div>
+                <img alt="Earth Soul Interior" class="image-card" src="public/images/luxury_spa_wellness_1.jpeg"/>
+            </div>
+        </div>
+        <div class="slide-number">10</div>
+    </div>
+
+    <!-- Slide 11: Earth Soul Secret -->
+    <div class="slide-container" id="slide11">
+        <div class="content-layer">
+            <div class="grid-layout">
+                <img alt="Biophilic Design" class="image-card" src="public/images/luxury_pool_outdoor_1.jpeg"/>
+                <div>
+                    <div class="tag">Earth Soul Secret</div>
+                    <h2 class="text-5xl font-bold mb-6">The "Biophilic<br/>Ratio"</h2>
+                    <div class="accent-line"></div>
+                    <p class="text-xl text-gray-600 mb-8">
+                        Follow the <strong>20% Green Rule</strong> for authentic organic warmth.
+                    </p>
+                    <div class="bg-accent/10 p-8 border-l-4 border-accent">
+                        <p class="text-primary font-semibold mb-2">The Sweet Spot:</p>
+                        <p class="text-gray-600">Exactly 20% of your visual field should be organic life (plants, wood, stone). This is where the human heart rate actually slows down.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">11</div>
+    </div>
+
+    <!-- Slide 12: Soul Type 4: The Visionary -->
+    <div class="slide-container" id="slide12">
+        <div class="content-layer">
+            <div class="grid-layout">
+                <div>
+                    <div class="tag">Soul Type 04</div>
+                    <h2 class="text-5xl font-bold mb-6">The Visionary</h2>
+                    <p class="text-accent font-semibold mb-4">Brutalist &amp; Mid-Century Modern</p>
+                    <div class="accent-line"></div>
+                    <ul class="space-y-4 text-lg text-gray-600">
+                        <li class="flex items-start"><span class="text-accent mr-3">✦</span> Motivated by Geometry and structural honesty.</li>
+                        <li class="flex items-start"><span class="text-accent mr-3">✦</span> Challenges the eye and starts a conversation.</li>
+                        <li class="flex items-start"><span class="text-accent mr-3">✦</span> Values truth and impact over traditional "pretty."</li>
+                    </ul>
+                </div>
+                <img alt="Visionary Interior" class="image-card" src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+            </div>
+        </div>
+        <div class="slide-number">12</div>
+    </div>
+
+    <!-- Slide 13: Visionary Secret -->
+    <div class="slide-container" id="slide13">
+        <div class="content-layer">
+            <div class="grid-layout">
+                <img alt="Hero Object" class="image-card" src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                <div>
+                    <div class="tag">Visionary Secret</div>
+                    <h2 class="text-5xl font-bold mb-6">The "Hero Object"<br/>Strategy</h2>
+                    <div class="accent-line"></div>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Use <strong>Scale Over Quantity</strong> to create a gallery-like atmosphere.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold">1</div>
+                            <p class="text-gray-600">One giant canvas instead of five small pictures.</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold">2</div>
+                            <p class="text-gray-600">One massive floor lamp instead of three small ones.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">13</div>
+    </div>
+
+    <!-- Slide 14: Curb Appeal -->
+    <div class="slide-container" id="slide14">
+        <div class="content-layer">
+            <div class="grid-layout">
+                <div>
+                    <div class="tag">Exterior Narrative</div>
+                    <h2 class="text-5xl font-bold mb-6">Curb Appeal:<br/>The Handshake</h2>
+                    <div class="accent-line"></div>
+                    <p class="text-xl text-gray-600 mb-6">
+                        The transition from the public world to the private sanctuary.
+                    </p>
+                    <ul class="space-y-4 text-gray-500">
+                        <li>• Create a "Threshold Moment" for the brain.</li>
+                        <li>• The front door is your boldest identity statement.</li>
+                        <li>• High-gloss finishes signal luxury instantly.</li>
+                    </ul>
+                </div>
+                <img alt="Curb Appeal" class="image-card" src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+            </div>
+        </div>
+        <div class="slide-number">14</div>
+    </div>
+
+    <!-- Slide 15: Curb Appeal Secret -->
+    <div class="slide-container" id="slide15">
+        <div class="content-layer">
+            <div class="grid-layout">
+                <img alt="Discovery Path" class="image-card" src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                <div>
+                    <div class="tag">Curb Appeal Secret</div>
+                    <h2 class="text-5xl font-bold mb-6">The "Three-Second"<br/>Sightline</h2>
+                    <div class="accent-line"></div>
+                    <p class="text-lg text-gray-600 mb-6">
+                        If you can see the door, trash cans, and hose all at once, your "Threshold" is broken.
+                    </p>
+                    <div class="bg-primary text-white p-8">
+                        <h3 class="text-accent font-bold mb-2">The Discovery Path</h3>
+                        <p class="text-gray-300">Use a "Visual Block" (planter, trellis, hedge) to force the eye to move. This increases perceived value by up to 7%.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">15</div>
+    </div>
+
+    <!-- Slide 16: The Sale Blueprint -->
+    <div class="slide-container" id="slide16">
+        <img alt="Real Estate Sale" class="bg-image" src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&amp;fit=crop&amp;w=1280&amp;q=80"/>
+        <div class="overlay" style="background: linear-gradient(to bottom, rgba(26,26,26,0.7), rgba(26,26,26,0.9));"></div>
+        <div class="content-layer text-white text-center items-center">
+            <div class="tag">Equity Strategy</div>
+            <h2 class="text-6xl font-bold mb-8 text-white">Turning Style into Equity</h2>
+            <div class="accent-line mx-auto"></div>
+            <div class="grid grid-cols-3 gap-8 mt-12 w-full max-w-5xl">
+                <div class="p-6 border border-gray-700">
+                    <h3 class="text-accent font-bold mb-4">Lifestyle Sales</h3>
+                    <p class="text-sm text-gray-400">Selling the "Best Version" of a buyer's future life.</p>
+                </div>
+                <div class="p-6 border border-gray-700">
+                    <h3 class="text-accent font-bold mb-4">De-Personalize</h3>
+                    <p class="text-sm text-gray-400">Replace photos with architectural sketches to invite imagination.</p>
+                </div>
+                <div class="p-6 border border-gray-700">
+                    <h3 class="text-accent font-bold mb-4">Scent Equity</h3>
+                    <p class="text-sm text-gray-400">"Fresh Rain" or "White Tea" signals a clean, maintained home.</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">16</div>
+    </div>
+
+    <!-- Slide 17: About Pete Bauch -->
+    <div class="slide-container" id="slide17">
+        <div class="content-layer">
+            <div class="grid-layout">
+                <div>
+                    <div class="tag">Your Partner</div>
+                    <h2 class="text-5xl font-bold mb-6">Pete Bauch</h2>
+                    <p class="text-accent font-semibold mb-4">Realtor | Architectural Soul Expert</p>
+                    <div class="accent-line"></div>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        With 30+ years of experience, Pete helps homeowners look past the "builder-grade" to find their unique vibe and protect their most valuable asset.
+                    </p>
+                    <div class="space-y-2 text-primary font-semibold">
+                        <p>770.617.7720</p>
+                        <p>PeteBauch.HomeSmart@gmail.com</p>
+                        <p class="text-accent">www.AtlantaRealEstateHome.com</p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img alt="Pete Bauch Office" class="image-card" src="https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                    <div class="absolute -bottom-6 -left-6 bg-accent p-8 text-white shadow-xl">
+                        <p class="text-2xl font-bold">"Your home is your sanctuary. Go live in it."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">17</div>
+    </div>
+</body>
+</html>
